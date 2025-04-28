@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Users, Briefcase, Award, ChevronRight } from 'lucide-react';
@@ -18,17 +17,17 @@ const HomePage = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-fade-in">
-              Driving Tech Innovation for Yemen's Future
+              Empowering Yemen's Tech Innovation
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-100 animate-fade-in" style={{animationDelay: "0.2s"}}>
-              We empower Yemen's tech ecosystem through hackathons, capacity building, and entrepreneurship consulting.
+              We led Yemen's first major tech hackathon for economic recovery, bringing innovation and entrepreneurship to the forefront.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{animationDelay: "0.4s"}}>
               <Button asChild size="lg" className="bg-brand-orange hover:bg-brand-orange-light text-white btn-hover">
-                <Link to="/services">Explore Our Services</Link>
+                <Link to="/services">Our Services</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10 btn-hover">
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact">Get in Touch</Link>
               </Button>
             </div>
           </div>
@@ -43,32 +42,32 @@ const HomePage = () => {
               <div className="w-16 h-16 mx-auto mb-4 bg-brand-blue/10 rounded-full flex items-center justify-center">
                 <Award className="h-8 w-8 text-brand-blue" />
               </div>
-              <h3 className="text-3xl font-bold mb-2">15+</h3>
-              <p className="text-gray-600">Successful Hackathons</p>
+              <h3 className="text-3xl font-bold mb-2">200+</h3>
+              <p className="text-gray-600">Hackathon Participants</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm text-center hover-scale">
               <div className="w-16 h-16 mx-auto mb-4 bg-brand-blue/10 rounded-full flex items-center justify-center">
                 <Users className="h-8 w-8 text-brand-blue" />
               </div>
-              <h3 className="text-3xl font-bold mb-2">500+</h3>
-              <p className="text-gray-600">Trained Participants</p>
+              <h3 className="text-3xl font-bold mb-2">25</h3>
+              <p className="text-gray-600">Solutions Developed</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm text-center hover-scale">
               <div className="w-16 h-16 mx-auto mb-4 bg-brand-blue/10 rounded-full flex items-center justify-center">
                 <Briefcase className="h-8 w-8 text-brand-blue" />
               </div>
-              <h3 className="text-3xl font-bold mb-2">30+</h3>
-              <p className="text-gray-600">Startups Mentored</p>
+              <h3 className="text-3xl font-bold mb-2">8</h3>
+              <p className="text-gray-600">Funded Projects</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm text-center hover-scale">
               <div className="w-16 h-16 mx-auto mb-4 bg-brand-blue/10 rounded-full flex items-center justify-center">
                 <Code className="h-8 w-8 text-brand-blue" />
               </div>
-              <h3 className="text-3xl font-bold mb-2">12</h3>
-              <p className="text-gray-600">Tech Partnerships</p>
+              <h3 className="text-3xl font-bold mb-2">5</h3>
+              <p className="text-gray-600">Economic Sectors</p>
             </div>
           </div>
         </div>
@@ -79,28 +78,28 @@ const HomePage = () => {
         <div className="container mx-auto px-4">
           <SectionHeading 
             title="Our Services" 
-            subtitle="We provide specialized tech solutions to empower Yemen's digital transformation."
+            subtitle="Building on our successful hackathon experience, we offer specialized solutions to empower Yemen's digital transformation."
             centered
           />
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ServiceCard 
               title="Hackathon Design & Facilitation"
-              description="Custom tech challenges, sprint workshops, and problem-solving jams tailored to specific industry needs."
+              description="Leveraging our experience with the Unleash methodology to create impactful tech challenges and innovation sprints."
               icon={Code}
               link="/services#hackathon"
             />
             
             <ServiceCard 
               title="Capacity Building"
-              description="Comprehensive training programs for tech skills, design thinking, leadership, and startup management."
+              description="Comprehensive training programs for tech skills, design thinking, and innovation leadership."
               icon={Users}
               link="/services#capacity"
             />
             
             <ServiceCard 
               title="Entrepreneurship Consulting"
-              description="Expert mentoring for tech startups, business modeling, pitch coaching, and scaling strategies."
+              description="Expert mentoring for tech startups, from ideation to market entry, based on proven success stories."
               icon={Briefcase}
               link="/services#entrepreneurship"
             />

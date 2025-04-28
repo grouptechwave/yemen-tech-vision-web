@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
@@ -8,9 +7,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">YemenTech<span className="text-brand-orange">Vision</span></h3>
+            <h3 className="text-xl font-bold mb-4">Yemen<span className="text-brand-orange">Innovators</span></h3>
             <p className="text-gray-400 mb-4">
-              Empowering Yemen's tech ecosystem through innovation, capacity building, and entrepreneurial development.
+              Pioneering Yemen's tech ecosystem through innovation, capacity building, and entrepreneurial development.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-brand-orange transition-colors">
@@ -71,7 +70,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-10 pt-6">
           <p className="text-gray-500 text-center text-sm">
-            &copy; {new Date().getFullYear()} YemenTechVision. All rights reserved.
+            &copy; {new Date().getFullYear()} Yemen Innovators. All rights reserved.
           </p>
         </div>
       </div>
