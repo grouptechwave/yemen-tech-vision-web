@@ -3,12 +3,6 @@ import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from 'lucide-react';
 
-const NavItem = ({ to, children, onClick }) => (
-  <Link to={to} className="text-gray-700 hover:text-brand-blue font-medium py-2" onClick={onClick}>
-    {children}
-  </Link>
-);
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -20,8 +14,6 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
-  const navItems = ['Home', 'About Us', 'Services', 'Case Study', 'Blog', 'Contact'];
-
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm w-full">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -31,26 +23,18 @@ const Header = () => {
           </span>
         </Link>
 
-        {/* Navigation */}
-        <nav className="md:hidden flex flex-col space-y-4">
-          {navItems.map((item) => (
-            <NavItem key={item} to={`/${item.toLowerCase().replace(' ', '-')}`} onClick={closeMenu}>
+        {/* Navigation - Desktop and Mobile */}
+        <nav className={`flex md:hidden items-center space-x-8 ${isMenuOpen || window.innerWidth > 776 ? 'flex' : 'block'}`}>
+          {['Home', 'About Us', 'Services', 'Case Study', 'Blog', 'Contact'].map((item) => (
+            <Link key={item} to={`/${item.toLowerCase().replace(' ', '-')}`} className="text-gray-700 hover:text-brand-blue font-medium" onClick={closeMenu}>
               {item}
-            </NavItem>
+            </Link>
           ))}
-          <Button className="bg-brand-blue hover:bg-brand-blue-light w-full" onClick={closeMenu}>
-            Get Started
-          </Button>
         </nav>
 
-        <nav className="hidden md:flex items-center space-x-8">
-          {navItems.map((item) => (
-            <NavItem key={item} to={`/${item.toLowerCase().replace(' ', '-')}`} onClick={closeMenu}>
-              {item}
-            </NavItem>
-          ))}
+        <div className="hidden md:block">
           <Button className="bg-brand-blue hover:bg-brand-blue-light">Get Started</Button>
-        </nav>
+        </div>
 
         {/* Mobile Menu Button */}
         <button 
