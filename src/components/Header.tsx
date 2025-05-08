@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -23,13 +24,14 @@ const Header = () => {
           </span>
         </Link>
 
-        {/* Navigation - Desktop and Mobile */}
-        <nav className={`flex md:hidden items-center space-x-8 ${isMenuOpen || window.innerWidth > 776 ? 'flex' : 'block'}`}>
-          {['Home', 'About Us', 'Services', 'Case Study', 'Blog', 'Contact'].map((item) => (
-            <Link key={item} to={`/${item.toLowerCase().replace(' ', '-')}`} className="text-gray-700 hover:text-brand-blue font-medium" onClick={closeMenu}>
-              {item}
-            </Link>
-          ))}
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center space-x-8">
+          <Link to="/" className="text-gray-700 hover:text-brand-blue font-medium">Home</Link>
+          <Link to="/about" className="text-gray-700 hover:text-brand-blue font-medium">About Us</Link>
+          <Link to="/services" className="text-gray-700 hover:text-brand-blue font-medium">Services</Link>
+          <Link to="/case-study" className="text-gray-700 hover:text-brand-blue font-medium">Case Study</Link>
+          <Link to="/blog" className="text-gray-700 hover:text-brand-blue font-medium">Blog</Link>
+          <Link to="/contact" className="text-gray-700 hover:text-brand-blue font-medium">Contact</Link>
         </nav>
 
         <div className="hidden md:block">
@@ -45,6 +47,21 @@ const Header = () => {
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
+
+      {/* Mobile Navigation */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white border-t">
+          <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+            <Link to="/" className="text-gray-700 hover:text-brand-blue font-medium py-2" onClick={closeMenu}>Home</Link>
+            <Link to="/about" className="text-gray-700 hover:text-brand-blue font-medium py-2" onClick={closeMenu}>About Us</Link>
+            <Link to="/services" className="text-gray-700 hover:text-brand-blue font-medium py-2" onClick={closeMenu}>Services</Link>
+            <Link to="/case-study" className="text-gray-700 hover:text-brand-blue font-medium py-2" onClick={closeMenu}>Case Study</Link>
+            <Link to="/blog" className="text-gray-700 hover:text-brand-blue font-medium py-2" onClick={closeMenu}>Blog</Link>
+            <Link to="/contact" className="text-gray-700 hover:text-brand-blue font-medium py-2" onClick={closeMenu}>Contact</Link>
+            <Button className="bg-brand-blue hover:bg-brand-blue-light w-full" onClick={closeMenu}>Get Started</Button>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
