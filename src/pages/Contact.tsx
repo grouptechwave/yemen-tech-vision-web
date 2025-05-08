@@ -44,8 +44,8 @@ const Contact = () => {
                     <h3 className="text-xl font-bold mb-1">Visit Us</h3>
                     <p className="text-gray-600">
                       Main Office<br />
-                      Al-Zubairi Street<br />
-                      Sana'a, Yemen
+                      Al-Masbah Street<br />
+                      Taiz, Yemen
                     </p>
                   </div>
                 </div>
@@ -91,24 +91,6 @@ const Contact = () => {
             <div className="bg-white p-8 rounded-xl shadow-md">
               <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
               <ContactForm />
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Map Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <SectionHeading 
-            title="Our Location" 
-            subtitle="Find us in the heart of Sana'a, Yemen."
-            centered
-          />
-          
-          <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
-            {/* Placeholder for map */}
-            <div className="bg-gray-300 w-full h-full flex items-center justify-center">
-              <p className="text-gray-600 text-xl">Interactive Map Would Be Displayed Here</p>
             </div>
           </div>
         </div>
