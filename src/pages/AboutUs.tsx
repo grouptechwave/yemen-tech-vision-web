@@ -11,37 +11,37 @@ import Footer from '@/components/Footer';
 const AboutUs = () => {
   const teamMembers = [
     {
-      name: "Sara Ahmed",
+      name: "Badea Nabil",
       position: "Founder & Lead Consultant",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-      bio: "Sara has 10+ years experience in tech leadership and has facilitated over 20 hackathons across the MENA region."
+      bio: "Badea has 10+ years experience in tech leadership and has facilitated over 20 hackathons across the MENA region."
     },
     {
-      name: "Omar Hassan",
-      position: "Technical Director",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      bio: "Omar specializes in emerging technologies and leads our capacity building programs focused on practical tech skills."
+      name: "Badea Nabil",
+      position: "Founder & Lead Consultant",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+      bio: "Badea has 10+ years experience in tech leadership and has facilitated over 20 hackathons across the MENA region."
     },
     {
-      name: "Layla Mohammed",
-      position: "Entrepreneurship Coach",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-      bio: "Layla has helped over 30 startups secure funding and build sustainable business models in challenging environments."
+      name: "Badea Nabil",
+      position: "Founder & Lead Consultant",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+      bio: "Badea has 10+ years experience in tech leadership and has facilitated over 20 hackathons across the MENA region."
     },
     {
-      name: "Khalid Al-Ameri",
-      position: "Program Manager",
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
-      bio: "Khalid ensures flawless execution of our programs and maintains relationships with our partners and stakeholders."
+      name: "Badea Nabil",
+      position: "Founder & Lead Consultant",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+      bio: "Badea has 10+ years experience in tech leadership and has facilitated over 20 hackathons across the MENA region."
     }
   ];
 
   const partners = [
-    { name: "Yemen Digital Innovation Hub", logo: "https://via.placeholder.com/150" },
-    { name: "Global Tech Foundation", logo: "https://via.placeholder.com/150" },
-    { name: "Arab Development Initiative", logo: "https://via.placeholder.com/150" },
-    { name: "Sana'a Tech Incubator", logo: "https://via.placeholder.com/150" },
-    { name: "International Development Bank", logo: "https://via.placeholder.com/150" }
+    { name: "Unleash.org", logo: "https://" },
+    { name: "Unleash.org", logo: "https://" },
+    { name: "Unleash.org", logo: "https://" },
+    { name: "Unleash.org", logo: "https:/" },
+    { name: "Unleash.org", logo: "https://" }
   ];
 
   return (
